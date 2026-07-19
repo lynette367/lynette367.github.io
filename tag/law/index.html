@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+
+<title>Tag: law | KiviBloom Insights</title>
+<meta name="description" content="Explore thoughtful insights into history, and the complexity of culture. ">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=1784456302832">
+<link rel="shortcut icon" href="/favicon.ico?v=1784456302832">
+<meta property="og:image" content="/images/avatar.png">
+<link rel="preload" as="image" href="/images/avatar.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Handlee&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- AOS animation library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- KaTeX for math -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="/styles/main.css">
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#4EA58A',
+                    secondary: '#8FC8AE',
+                    tertiary: '#c8e6da',
+                    canopy: '#1F4C3B',
+                    mist: '#F4FBF6',
+                    wood: '#B98B5F',
+                    dew: '#E2F4EA',
+                    dusk: '#0f2c22'
+                },
+                fontFamily: {
+                    sans: ['Nunito', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica', 'Arial', 'sans-serif'],
+                    display: ['Handlee', 'Nunito', 'PingFang SC', 'sans-serif']
+                },
+                boxShadow: {
+                    'card': '0 20px 35px rgba(31, 76, 59, 0.08)',
+                    'card-hover': '0 30px 45px rgba(31, 76, 59, 0.14)'
+                },
+                borderRadius: {
+                    'xl': '1rem',
+                    '2xl': '1.5rem',
+                    '3xl': '2rem'
+                }
+            }
+        }
+    }
+</script>
+<style type="text/tailwindcss">
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 6px 24px rgba(15, 44, 34, 0.35);
+        }
+        .text-shadow-lg {
+            text-shadow: 0 12px 28px rgba(15, 44, 34, 0.45);
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #4ea58a 0%, #2a7056 100%);
+        }
+        .bg-gradient-secondary {
+            background: linear-gradient(135deg, #8fc8ae 0%, #4ea58a 100%);
+        }
+        .bg-gradient-tertiary {
+            background: linear-gradient(135deg, #fdf9f2 0%, #f0e2d1 100%);
+        }
+    }
+</style>
+<style>
+    :root {
+        --forest-primary: #4ea58a;
+        --forest-deep: #1f4c3b;
+        --forest-dark: #0f2c22;
+        --forest-mist: #f4fbf6;
+        --forest-wood: #b98b5f;
+        --forest-highlight: #8fc8ae;
+        --forest-dew: #e2f4ea;
+    }
+
+    body {
+        font-family: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #1a2a23;
+        background:
+            radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 45%),
+            radial-gradient(circle at 80% 0%, rgba(163, 219, 187, 0.3), transparent 55%),
+            linear-gradient(180deg, #f7fcf9 0%, #e8f4ed 55%, #d9efe6 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Handlee', 'Nunito', 'PingFang SC', sans-serif;
+        font-weight: 600;
+        color: var(--forest-deep);
+        letter-spacing: 0.5px;
+    }
+
+    .nav-link {
+        position: relative;
+        padding-bottom: 4px;
+        font-weight: 500;
+        color: rgba(15, 44, 34, 0.8);
+        transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--forest-primary), rgba(78, 165, 138, 0));
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--forest-primary);
+    }
+
+    .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+
+    .article-card,
+    .forest-panel {
+        transition: transform 0.6s cubic-bezier(.19,1,.22,1), box-shadow 0.6s ease;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(78, 165, 138, 0.12);
+    }
+    
+    .article-card:hover,
+    .forest-panel:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 35px 65px rgba(15, 44, 34, 0.12);
+    }
+
+    .tag {
+        transition: all 0.35s ease;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: rgba(78, 165, 138, 0.08);
+        color: var(--forest-primary);
+        text-transform: capitalize;
+    }
+
+    .tag:hover {
+        border-color: var(--forest-primary);
+        background: var(--forest-primary);
+        color: #f6fffb;
+        transform: translateY(-2px);
+    }
+
+    .leaf-button {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.9rem 1.8rem;
+        border-radius: 999px;
+        border: none;
+        background: linear-gradient(120deg, #caa981 0%, #a37445 55%, #815737 100%);
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(129, 87, 55, 0.35);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .leaf-button::before,
+    .leaf-button::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        animation: dew 4s linear infinite;
+    }
+
+    .leaf-button::before {
+        top: 8px;
+        left: 18px;
+    }
+
+    .leaf-button::after {
+        bottom: 10px;
+        right: 22px;
+        animation-delay: 1s;
+    }
+
+    .leaf-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 35px rgba(129, 87, 55, 0.35);
+    }
+
+    .hero-forest {
+        background: linear-gradient(180deg, rgba(15,44,34,0.9) 0%, rgba(31,76,59,0.8) 50%, rgba(79,136,108,0.85) 100%);
+        border-radius: 48px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero-forest::before,
+    .hero-forest::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle, rgba(143,200,174,0.25), transparent 55%);
+        mix-blend-mode: screen;
+        animation: pulse 12s ease-in-out infinite;
+    }
+
+    .hero-forest::after {
+        animation-delay: 6s;
+    }
+
+    .parallax-layer {
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
+
+    .parallax-layer.trees {
+        background-image:
+            radial-gradient(circle at 20% 100%, rgba(24,73,51,0.8) 0%, transparent 55%),
+            radial-gradient(circle at 80% 100%, rgba(35,97,69,0.8) 0%, transparent 50%);
+    }
+
+    .parallax-layer.mist {
+        background: linear-gradient(180deg, rgba(244,251,246,0.25), rgba(244,251,246,0));
+    }
+
+    .floating-leaf {
+        position: absolute;
+        width: 18px;
+        height: 36px;
+        border-radius: 40% 60% 40% 60%;
+        background: rgba(143,200,174,0.85);
+        box-shadow: 0 8px 16px rgba(15, 44, 34, 0.25);
+        animation: floatLeaf 10s ease-in-out infinite;
+    }
+
+    .scene-card {
+        border-radius: 32px;
+        padding: 2rem;
+        background: linear-gradient(160deg, rgba(255,255,255,0.92), rgba(226,244,234,0.92));
+        border: 1px solid rgba(78,165,138,0.15);
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(8px);
+    }
+
+    .scene-card::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at top right, rgba(143,200,174,0.25), transparent 45%);
+        pointer-events: none;
+    }
+
+    .audio-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.4rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(78,165,138,0.2);
+        background: rgba(78,165,138,0.08);
+        color: var(--forest-dark);
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .audio-pill.is-playing {
+        background: var(--forest-primary);
+        color: #f6fffb;
+        border-color: transparent;
+        box-shadow: 0 12px 20px rgba(78, 165, 138, 0.35);
+    }
+
+    .dew-hover {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dew-hover::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.4), transparent 45%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+
+    .dew-hover:hover::before {
+        opacity: 1;
+    }
+
+    @keyframes floatLeaf {
+        0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+        50% { transform: translateY(-20px) rotate(6deg); opacity: 0.7; }
+        100% { transform: translateY(0) rotate(-3deg); opacity: 0.9; }
+    }
+
+    @keyframes dew {
+        0% { transform: translateY(0); opacity: 0.8; }
+        50% { transform: translateY(-6px); opacity: 0.4; }
+        100% { transform: translateY(0); opacity: 0.8; }
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.65; }
+    }
+
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(226, 244, 234, 0.6);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #4ea58a, #2a7056);
+        border-radius: 999px;
+    }
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #4ea58a rgba(226, 244, 234, 0.6);
+    }
+
+    /* Hero Carousel Styles */
+    .hero-carousel-container {
+        position: relative;
+    }
+
+    .carousel-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+    }
+
+    .carousel-slide.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .carousel-indicator {
+        width: 32px;
+        height: 4px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.4);
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-indicator.active,
+    .carousel-indicator:hover {
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        opacity: 0.8;
+    }
+
+    .carousel-prev:hover,
+    .carousel-next:hover {
+        opacity: 1;
+    }
+</style>
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body class="bg-light">
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-white/60 shadow-lg shadow-green-900/5">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <div class="flex items-center">
+        <a href="https://kivibloom.site" class="flex items-center">
+          
+          <div class="h-12 w-12 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-lg shadow-green-900/20 border border-white/30 mr-4 overflow-hidden">
+            <img src="https://kivibloom.site/images/avatar.png" alt="Logo" class="w-full h-full object-contain p-1" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\\'text-2xl text-white\\'>K</span>';">
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl md:text-2xl font-bold text-canopy">KiviBloom Insights</span>
+            
+              <span class="text-xs md:text-sm text-gray-600/90 hidden md:inline-block tracking-wide">Explore thoughtful insights into history, and the complexity of culture. </span>
+            
+          </div>
+        </a>
+      </div>
+      
+      <!-- Desktop navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        
+          
+            <a href="/" class="nav-link">
+              Home
+            </a>
+          
+        
+          
+            <a href="/archives" class="nav-link">
+              Archives
+            </a>
+          
+        
+          
+            <a href="/tags" class="nav-link">
+              tags
+            </a>
+          
+        
+          
+            <a href="/post/about" class="nav-link">
+              About
+            </a>
+          
+        
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-canopy focus:outline-none rounded-full p-2 border border-canopy/15">
+          <i class="fa fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile navigation menu -->
+    <div id="mobile-menu" class="md:hidden hidden pb-4">
+      <nav class="flex flex-col space-y-4 pt-2">
+        
+          
+            <a href="/" class="nav-link text-base">
+              Home
+            </a>
+          
+        
+          
+            <a href="/archives" class="nav-link text-base">
+              Archives
+            </a>
+          
+        
+          
+            <a href="/tags" class="nav-link text-base">
+              tags
+            </a>
+          
+        
+          
+            <a href="/post/about" class="nav-link text-base">
+              About
+            </a>
+          
+        
+        <a href="#scenes" class="leaf-button text-center justify-center">
+          Enter the grove
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle icon
+        const icon = menuToggle.querySelector('i');
+        if (mobileMenu.classList.contains('hidden')) {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        } else {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        }
+      });
+    }
+  });
+</script>
+
+    
+    <main>
+      <section class="py-12 md:py-16 bg-white/80 backdrop-blur-sm rounded-3xl mx-4 md:mx-8 mt-12 border-4 border-primary min-h-[400px]">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <div class="mb-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-primary pl-2 md:pl-6" data-aos="fade-right">
+              Tag: <span class="text-primary">law</span>
+            </h2>
+          </div>
+          
+          
+            <div>
+              
+  <div class="space-y-3">
+    
+      
+        <article class="post p-4 rounded-xl hover:bg-primary/10 transition-all hover:scale-105 border-2 border-transparent hover:border-primary/30" data-aos="fade-up" data-aos-delay="0">
+          <a href="https://kivibloom.site/post/the-underlying-source-code-of-western-law/" class="block hover:text-primary transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center gap-3">
+              
+                <span class="text-gray-500 text-sm md:w-32 flex-shrink-0">2026-06-16</span>
+              
+              <div class="flex-1">
+                <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-0 flex items-center gap-2">
+                  <span>📝</span>
+                  The Underlying Source Code of Western Law
+                </h3>
+                
+                  <p class="text-gray-600 text-sm mt-2 line-clamp-2 hidden md:block">
+                    <p>What is the fundamental code of the Western system?<br>
+It has never been the so-called “balances”,“progress&quot;, &quot;civil rights&quot; that Westerners claim; these are merely euphemisms.<br>
+At its core, it stems from the arbitrary, absolute personal will of lords or judges.</p>
+
+                  </p>
+                
+              </div>
+              
+                <div class="flex flex-wrap gap-2 md:ml-auto">
+                  
+                    
+                      <a href="https://kivibloom.site/tag/law/" class="tag text-xs font-medium px-2 py-1 rounded-full bg-primary/10 text-primary" onclick="event.stopPropagation();">
+                        law
+                      </a>
+                    
+                  
+                    
+                      <a href="https://kivibloom.site/tag/history/" class="tag text-xs font-medium px-2 py-1 rounded-full bg-primary/10 text-primary" onclick="event.stopPropagation();">
+                        history
+                      </a>
+                    
+                  
+                </div>
+              
+            </div>
+          </a>
+        </article>
+      
+    
+  </div>
+
+
+            </div>
+            
+            <div class="mt-8">
+              
+
+            </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-16 bg-gradient-to-b from-mist to-dew text-canopy border-t border-white/40">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <p class="uppercase text-xs tracking-[0.4em] text-canopy/60 mb-3">About</p>
+        <h3 class="text-2xl font-bold mb-3">KiviBloom Insights</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Explore thoughtful insights into history, and the complexity of culture. </p>
+        <div class="flex space-x-4">
+          
+          
+          
+        </div>
+      </div>
+
+      <div>
+        <p class="uppercase text-xs tracking-[0.4em] text-canopy/60 mb-3">Navigate</p>
+        <ul class="space-y-3 text-gray-600">
+          
+            <li>
+              
+                <a href="/" class="nav-link text-base">Home</a>
+              
+            </li>
+          
+            <li>
+              
+                <a href="/archives" class="nav-link text-base">Archives</a>
+              
+            </li>
+          
+            <li>
+              
+                <a href="/tags" class="nav-link text-base">tags</a>
+              
+            </li>
+          
+            <li>
+              
+                <a href="/post/about" class="nav-link text-base">About</a>
+              
+            </li>
+          
+        </ul>
+      </div>
+
+      <div>
+        <p class="uppercase text-xs tracking-[0.4em] text-canopy/60 mb-3">Tags</p>
+        <div class="flex flex-wrap gap-2">
+          
+            <a href="https://kivibloom.site/tag/society/" class="tag px-4 py-2 text-sm">society</a>
+          
+            <a href="https://kivibloom.site/tag/culture/" class="tag px-4 py-2 text-sm">culture</a>
+          
+            <a href="https://kivibloom.site/tag/history/" class="tag px-4 py-2 text-sm">history</a>
+          
+            <a href="https://kivibloom.site/tag/law/" class="tag px-4 py-2 text-sm">law</a>
+          
+            <a href="https://kivibloom.site/tag/forgery/" class="tag px-4 py-2 text-sm">forgery</a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-canopy/10 mt-10 pt-6 text-sm text-gray-600 text-center">
+      <p class="mb-1">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+      <p>&copy; 2026 KiviBloom Insights · All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 900,
+      easing: 'ease-out-cubic',
+      once: true
+    });
+  }
+
+  if (typeof hljs !== 'undefined') {
+    hljs.initHighlightingOnLoad();
+  }
+
+  // Parallax layers
+  const parallaxLayers = document.querySelectorAll('[data-depth]');
+  if (parallaxLayers.length > 0) {
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      parallaxLayers.forEach(layer => {
+        const depth = parseFloat(layer.dataset.depth || '0');
+        layer.style.transform = `translate3d(0, ${scrollTop * depth * -0.05}px, 0)`;
+      });
+    }, { passive: true });
+  }
+
+  // Audio palette - local nature sound assets
+  const domain = 'https://kivibloom.site';
+  const audioBasePath = domain ? domain.replace(/\/$/, '') + '/audio' : '/audio';
+
+  const soundMap = {
+    water: audioBasePath + '/water.wav',
+    birds: audioBasePath + '/birds.wav',
+    wind: audioBasePath + '/wind.wav'
+  };
+
+  // Debug helper: output audio paths
+  console.log('[Forest Audio] audio path map:', soundMap);
+
+  let forestAudio = null;
+  let activeButton = null;
+  let currentSoundKey = null;
+
+  function updateButtonState(button, isPlaying) {
+    if (!button) return;
+    const icon = button.querySelector('i');
+    button.classList.toggle('is-playing', isPlaying);
+    if (icon) {
+      icon.classList.toggle('fa-play', !isPlaying);
+      icon.classList.toggle('fa-pause', isPlaying);
+    }
+  }
+
+  function stopActiveAudio(resetButton = true) {
+    if (forestAudio && !forestAudio.paused) {
+      try {
+        forestAudio.pause();
+        forestAudio.currentTime = 0;
+      } catch (e) {
+        console.warn('[Forest Audio] error while stopping audio:', e);
+      }
+    }
+    if (resetButton && activeButton) {
+      updateButtonState(activeButton, false);
+    }
+    forestAudio = null;
+    activeButton = null;
+    currentSoundKey = null;
+  }
+
+  document.querySelectorAll('.audio-pill').forEach(button => {
+    button.addEventListener('click', () => {
+      const soundKey = button.dataset.sound;
+
+      console.log('[Forest Audio] audio button clicked:', soundKey);
+
+      if (!soundKey || !soundMap[soundKey]) {
+        console.warn('[Forest Audio] sound asset not found:', soundKey);
+        alert('Sound asset is not configured: ' + soundKey);
+        return;
+      }
+
+      // Pause if this is the currently playing button
+      if (button === activeButton && forestAudio && !forestAudio.paused) {
+        console.log('[Forest Audio] pausing current audio');
+        stopActiveAudio();
+        return;
+      }
+
+      // Stop any previous audio
+      stopActiveAudio(false);
+
+      // Create a new audio object
+      const audioSrc = soundMap[soundKey];
+      console.log('[Forest Audio] preparing to play audio:', audioSrc);
+
+      try {
+        forestAudio = new Audio();
+        forestAudio.src = audioSrc;
+        forestAudio.loop = true;
+        forestAudio.volume = 0.5;
+        forestAudio.preload = 'metadata';
+
+        // Register event listeners
+        forestAudio.addEventListener('canplaythrough', () => {
+          console.log('[Forest Audio] audio fully buffered:', audioSrc);
+        });
+
+        forestAudio.addEventListener('error', (e) => {
+          console.error('[Forest Audio] audio load error:', {
+            src: audioSrc,
+            error: forestAudio.error,
+            networkState: forestAudio.networkState,
+            readyState: forestAudio.readyState
+          });
+          alert('Audio failed to load: ' + audioSrc + '\nPlease confirm the file exists and your network is stable.');
+          stopActiveAudio();
+        });
+
+        // Attempt playback
+        const playPromise = forestAudio.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log('[Forest Audio] playback started');
+            activeButton = button;
+            currentSoundKey = soundKey;
+            updateButtonState(button, true);
+          }).catch((err) => {
+            console.error('[Forest Audio] playback failed:', err);
+            alert('Unable to play audio: ' + err.message + '\n\nPossible causes:\n1. Browser blocked autoplay\n2. Audio file is corrupted\n3. Network hiccup\n\nPlease try clicking the play button again.');
+            stopActiveAudio();
+          });
+        } else {
+          // Legacy browser fallback
+          console.log('[Forest Audio] browser lacks Promise support, attempting direct play');
+          setTimeout(() => {
+            if (forestAudio) {
+              forestAudio.play();
+              activeButton = button;
+              currentSoundKey = soundKey;
+              updateButtonState(button, true);
+              console.log('[Forest Audio] playback succeeded (compat mode)');
+            }
+          }, 100);
+        }
+
+      } catch (e) {
+        console.error('[Forest Audio] failed to create audio object:', e);
+        alert('Unable to create the audio player: ' + e.message);
+      }
+    });
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopActiveAudio();
+    }
+  });
+
+  // Leaf micro interaction on CTA buttons
+  document.querySelectorAll('.leaf-button').forEach(button => {
+    button.addEventListener('click', (event) => {
+      const leaf = document.createElement('span');
+      leaf.className = 'floating-leaf';
+      leaf.style.position = 'absolute';
+      leaf.style.width = '12px';
+      leaf.style.height = '24px';
+      leaf.style.background = 'rgba(255,255,255,0.5)';
+      leaf.style.left = `${event.offsetX}px`;
+      leaf.style.top = `${event.offsetY}px`;
+      leaf.style.animationDuration = '1.5s';
+      leaf.style.pointerEvents = 'none';
+      button.appendChild(leaf);
+      setTimeout(() => leaf.remove(), 1200);
+    });
+  });
+
+  // Hero Carousel
+  const carouselContainer = document.querySelector('.hero-carousel-container');
+  if (carouselContainer) {
+    const slides = carouselContainer.querySelectorAll('.carousel-slide');
+    const indicators = carouselContainer.querySelectorAll('.carousel-indicator');
+    const prevBtn = carouselContainer.querySelector('.carousel-prev');
+    const nextBtn = carouselContainer.querySelector('.carousel-next');
+    let currentSlide = 0;
+    let autoPlayInterval;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      
+      if (slides[index]) {
+        slides[index].classList.add('active');
+      }
+      if (indicators[index]) {
+        indicators[index].classList.add('active');
+      }
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+
+    function prevSlide() {
+      const prev = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+      }
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    }
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        showSlide(index);
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    });
+
+    if (slides.length > 1) {
+      startAutoPlay();
+    }
+
+    carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+    carouselContainer.addEventListener('mouseleave', startAutoPlay);
+  }
+});
+</script>
+
+
+
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
